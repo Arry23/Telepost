@@ -20,9 +20,9 @@ app.use('/users',userroute);
 
 const port = process.env.PORT || 9000;
 
-app.get("/",(req,res) =>{
-    res.send("Hello World!!!")
-})
+// app.get("/",(req,res) =>{
+//     res.send("Hello World!!!")
+// })
 
 app.listen(port,() =>{
     console.log("Server started!!!");
