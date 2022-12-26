@@ -21,7 +21,7 @@ export default function Register() {
       password: loginp,
     };
 
-    const data = await fetch(`${SERVER_URL}/users/login`, {
+    const data = await fetch(`${process.env.SERVER_URL}/users/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(x),
@@ -42,7 +42,7 @@ export default function Register() {
       password:createp
     }
 
-    const data = await fetch(`${SERVER_URL}/users`,{
+    const data = await fetch(`${process.env.SERVER_URL}/users`,{
       method:"POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(x)
