@@ -23,7 +23,7 @@ export default function Chat(props) {
   useEffect(() =>{
     if(props.modelname!==""){
       setInitdisplay("none");
-      fetch("http://localhost:9000/users/message",{
+      fetch(`${SERVER_URL}/users/message`,{
         method:"post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -57,7 +57,7 @@ export default function Chat(props) {
     if(hour === 0) 
       hour = 12;
     let datestr=(day<10?"0":"")+day+"/"+(month<10?"0":"")+month+"/"+year+" "+(hour<10?"0":"")+hour+":"+(min<10?"0":"")+min+" "+noon;
-    await fetch("http://localhost:9000/users/message/append",{
+    await fetch(`${SERVER_URL}/users/message/append`,{
       method:"post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -68,7 +68,7 @@ export default function Chat(props) {
         time:datestr
       })
     });
-    await fetch("http://localhost:9000/users/message",{
+    await fetch(`${SERVER_URL}/users/message`,{
       method:"post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

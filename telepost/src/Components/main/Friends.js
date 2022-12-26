@@ -6,7 +6,7 @@ export default function Friends(props) {
   const [arr,setArr] = useState([]);
 
   useEffect(() =>{
-    fetch("http://localhost:9000/users").then((res) =>{
+    fetch(`${SERVER_URL}/users`).then((res) =>{
       return res.json();
     }).then((data) =>{
       setArr(data);
