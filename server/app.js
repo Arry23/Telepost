@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const { url } = process.env ;
+const url  = "mongodb://localhost/messagingdb" || process.env;
 const cors = require("cors");
 
 const app = express();
@@ -21,7 +21,7 @@ app.use('/users',userroute);
 const port = process.env.PORT || 9000;
 
 app.get("/",(req,res) =>{
-    res.send("Hello World!!!");
+    res.send("Hello World!!!")
 })
 
 app.listen(port,() =>{
