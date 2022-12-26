@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const url = "mongodb://localhost/messagingdb";
+const { url } = process.env ;
 const cors = require("cors");
 
 const app = express();
@@ -18,9 +18,8 @@ app.use(express.json());
 const userroute = require("./routes/users");
 app.use('/users',userroute);
 
-const hostname = 'localhost';
-const port = 9000;
+const port = process.env.PORT || 9000;
 
-app.listen(9000,hostname,() =>{
+app.listen(port,() =>{
     console.log("Server started!!!");
 });
