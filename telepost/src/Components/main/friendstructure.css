@@ -1,0 +1,25 @@
+.friendstructure{
+    border: 1px solid black;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.friend-pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+.friend-name{
+    margin-left: 10px;
+    color: rgb(222, 222, 222);
+    font-family: cursive;
+}
+
+.friendstructure:nth-child(n+1){
+    border-top: 0px solid;
+}

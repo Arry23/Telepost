@@ -1,0 +1,154 @@
+.loginstyle {
+    height: 500px;
+    width: 500px;
+    background-color: #454552;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.flip-card-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    animation-name: flipper1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    transform-style: preserve-3d;
+}
+
+.flip-card-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    animation-name: flipper2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    transform-style: preserve-3d;
+}
+
+@keyframes flipper1{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(180deg) ;
+    }
+}
+
+@keyframes flipper2{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(0deg) ;
+    }
+}
+
+.createaccount{
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.back {
+    transform: rotateY(180deg);
+}
+
+.chatlogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+.credarea {
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+
+.login-and-create {
+    margin: 0;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loginbutton {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    margin-left: 0px;
+    background-color: #2885ae;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.createbutton{
+    width: 170px;
+    height: 35px;
+    margin: 10px;
+    margin-left: 0px;
+    background-color: #2885ae;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.welcomemsg {
+    text-align: center;
+    width: 420px;
+    color: aliceblue;
+}
+.createinput{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: first baseline;
+}
+
+.validity{
+    display: none;
+    margin-top: -5px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+::placeholder {
+    color: rgb(86, 77, 77);
+}

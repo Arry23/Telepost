@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(57, 53, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    margin: 0;
+}
+
+.grid-container{
+    background-color: rgba(91, 85, 85, 0.532);
+    display: grid;
+    height: 93.9vh;
+    width: 97.6vw;
+    grid-template-rows: 0.22fr 1.78fr;
+    grid-template-columns: 0.6fr 1.4fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    row-gap: 0.1px;
+    column-gap: 0.1px;
+}
+
+.grid-item1{
+    background-color: rgb(37, 36, 36);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: 1px solid black;
+}
+
+.grid-item2{
+    background-color: rgb(57, 53, 53);
+    overflow-y: scroll;
+}
+
+.grid-item3{
+    background-image: url('back-img.webp');
+    background-size: contain;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-rows: 10.3vh 75.6vh 8vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(60, 60, 59); 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #848484; 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e1dfdf;
+}
