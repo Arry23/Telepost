@@ -23,7 +23,7 @@ export default function Chat(props) {
   useEffect(() =>{
     if(props.modelname!==""){
       setInitdisplay("none");
-      fetch(`${SERVER_URL}/users/message`,{
+      fetch(`${process.env.SERVER_URL}/users/message`,{
         method:"post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
