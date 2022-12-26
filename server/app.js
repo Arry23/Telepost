@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const url  = "mongodb://localhost/messagingdb" || process.env;
+const url  = "mongodb://localhost/messagingdb" || process.env.MONGODB_URL;
 const cors = require("cors");
 
 const app = express();
