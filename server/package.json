@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "cd server && npm install && cd ../telepost && npm install && npm run build",
     "start": "node app.js"
   },
   "keywords": [],
