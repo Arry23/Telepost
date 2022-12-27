@@ -42,7 +42,7 @@ export default function Register() {
       password:createp
     }
 
-    const data = await fetch(`${process.env.SERVER_URL}/users`,{
+    const data = await fetch(`${process.env.REACT_APP_SERVER_URL}/users`,{
       method:"POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(x)
