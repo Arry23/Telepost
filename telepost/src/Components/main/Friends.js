@@ -6,7 +6,7 @@ export default function Friends(props) {
   const [arr,setArr] = useState([]);
 
   useEffect(() =>{
-    fetch(`${process.env.SERVER_URL}/users`).then((res) =>{
+    fetch(`${process.env.REACT_APP_SERVER_URL}/users`).then((res) =>{
       return res.json();
     }).then((data) =>{
       setArr(data);
