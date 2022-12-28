@@ -2,6 +2,33 @@
 
 
 
+
+
+I have made this online chatting application clone where a user can chat with his friends and have fun. To build this project I have used ReactJs in frontend and to style the page I have used CSS. To make the server, I used NodeJs and ExpressJs as backend framework. For the Database, I have used MongoDB. As I had learned ReactJs, NodeJs, and the basics of MongoDB just before this project, so to test my skills and the learning which I have got by learning these technologies, I made this project. As the number of users of this application so it is a small-scale project. As it is a small-scale project so every user in the Database can chat with every other user in the database, it will not be like an online social media platform where every user has their own friend list. 
+
+
+
+
+At the start of this application, if the user has already an account then he can directly login into the application and start chatting with his friends, and if the new user comes to use this application, then he has to first create an account, then only he can use the application.  Whenever a new user comes into the database, its collection will be created with every user who are already present in the database. Where we will store the chat history of the two user.
+
+
+
+
+As of now, I made this project because I wanted to test my skills and what I have learned from studying these technologies. In future I will try to add more features into this project like:  
+
+
+
+•	While logging in or signing up I can add Google authentication, where user can log in or sign up with his Google account.
+
+
+•	I can also add End to end encryption so that chat between two users can only be seen by only two of them.
+
+
+•	Fill the empty clip icon by providing series of option to the user where he can send links, send photos and videos, etc.
+
+
+
+
 On the starting of the application user have to login with his username and password.
 
 
